@@ -1,0 +1,143 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Kite+One:regular);
+
+body {
+    display: flex;
+    row-gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 15px 50px;
+    background: linear-gradient(93.46deg, #1CD8D2 0%, #93EDC7 100%);
+}
+
+.title {
+    margin-bottom: 20px;
+    font-family: 'Kite One';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 87px;
+
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #FF4040;
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1px;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+    background: #ff6f6f;
+}
+
+/* Card */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    width: 490px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 10px 5px 20px 13px rgba(10, 131, 125, 0.2);
+}
+
+.card::before {
+    content: "";
+
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    z-index: -1;
+
+    width: calc(100% - 20px);
+    height: 100%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+    border-radius: 6px;
+}
+
+.card-city {
+font-weight: 350;
+font-size: 60px;
+line-height: 72px;
+color: #000000;
+}
+
+.card-city span {
+    display: inline-block;
+    vertical-align: text-top;
+
+    padding: 3px 5px;
+    background: #FF4848;
+    border-radius: 8px;
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.card-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-value {
+font-size: 90px;
+line-height: 1;
+color: #000000;
+}
+
+.card-value sup {
+    font-size: 50%;
+}
+
+.card-img {
+
+}
+
+.card-discription {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+
+
